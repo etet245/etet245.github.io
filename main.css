@@ -4,14 +4,14 @@ html, body {
   padding: 0; }
 
 body {
-  background-color: #ccc;
+  background-color: #eee;
   font-family: Helvetica, Arial, sans-serif; }
 
 .hero {
   background-image: url("img/yosemite-600.jpg");
   background-size: cover;
   width: 100%;
-  height: 400px;
+  height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -26,11 +26,11 @@ body {
   justify-content: center;
   align-items: flex-start;
   margin: auto;
-  padding: 5px 0;
+  padding: 20px 0;
   width: 100%;
   max-width: 900px; }
   .portfolio .column {
-    margin: 5px auto;
+    margin: 20px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,19 +38,25 @@ body {
     .portfolio .column .col-title {
       font-size: 120%;
       font-family: Roboto, sans-serif;
-      text-align: center;
-      margin: 5px; }
+      text-align: center; }
+    .portfolio .column hr {
+      width: 100px; }
     .portfolio .column a {
-      margin: 5px 0; }
+      margin: 20px 0; }
+      .portfolio .column a img {
+        box-shadow: 0 0 3px #666; }
 
 @media only screen and (max-width: 800px) and (min-width: 601px) {
   .hero {
-    background-image: url("img/yosemite-800.jpg"); } }
+    background-image: url("img/yosemite-800.jpg");
+    height: 300px; } }
 @media only screen and (max-width: 1200px) and (min-width: 801px) {
   .hero {
-    background-image: url("img/yosemite-1200.jpg"); } }
+    background-image: url("img/yosemite-1200.jpg");
+    height: 400px; } }
 @media only screen and (min-width: 1200px) {
   .hero {
-    background-image: url("img/yosemite-2400.jpg"); } }
+    background-image: url("img/yosemite-2400.jpg");
+    height: 500px; } }
 
 /*# sourceMappingURL=main.css.map */

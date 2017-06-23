@@ -1,8 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+* {
+    box-sizing: border-box;
+}
+
 html, body {
     margin: 0;
     padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
 }
 
 body {
@@ -13,16 +20,36 @@ body {
 .hero {
     background-image: url("img/yosemite-600.jpg");
     background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
     width: 100%;
-    height: 200px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: white;
+    text-shadow: 0 0 10px black;
+    
+    .profile-pic {
+        background-image: url("img/twitter_crop_light.jpg");
+        background-size: cover;
+        background-position: center top;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 4px solid white;
+        margin: 5px;
+    }
     
     .title {
         font-size: 400%;
         font-family: Roboto, sans-serif;
+        margin: 5px;
+    }
+    .subtitle {
+        margin: 5px;
+        font-size: 120%;
     }
 }
 
@@ -42,12 +69,12 @@ body {
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
+        max-width: 100%;
         
         .col-title {
-            font-size: 120%;
+            font-size: 150%;
             font-family: Roboto, sans-serif;
             text-align: center;
-            //margin: 5px;
         }
         hr {
             width: 100px;
@@ -57,6 +84,8 @@ body {
             
             img {
                 box-shadow: 0 0 3px #666;
+                width: 100%;
+                height: auto;
             }
         }
     }
@@ -65,20 +94,17 @@ body {
 @media only screen and (max-width: 800px) and (min-width: 601px) {
     .hero {
         background-image: url("img/yosemite-800.jpg");
-        height: 300px;
     }
 }
 
 @media only screen and (max-width: 1200px) and (min-width: 801px) {
     .hero {
         background-image: url("img/yosemite-1200.jpg");
-        height: 400px;
     }
 }
 
 @media only screen and (min-width: 1200px) {
     .hero {
         background-image: url("img/yosemite-2400.jpg");
-        height: 500px;
     }
 }

@@ -19,36 +19,48 @@ body {
   background-position: center top;
   background-attachment: fixed;
   width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  text-shadow: 0 0 10px black; }
-  .hero .profile-pic {
-    background-image: url("img/twitter_crop_light.jpg");
-    background-size: cover;
-    background-position: center top;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 4px solid white;
-    margin: 5px; }
-  .hero .title {
-    font-size: 400%;
-    font-family: Roboto, sans-serif;
-    margin: 5px; }
-  .hero .subtitle {
-    margin: 5px;
-    font-size: 120%; }
-  .hero .social-menu {
-    margin: 5px;
+  height: 100%; }
+  .hero .background-shading {
+    background-color: black;
+    opacity: 0.2;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1; }
+  .hero .hero-content {
+    width: 100%;
+    height: 100%;
     display: flex;
-    justify-content: space-between;
-    width: 150px; }
-    .hero .social-menu i {
-      color: white; }
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 0 0 10px black;
+    position: absolute;
+    z-index: 2; }
+    .hero .hero-content .profile-pic {
+      background-image: url("img/twitter_crop_light.jpg");
+      background-size: cover;
+      background-position: center top;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 4px solid white;
+      margin: 5px; }
+    .hero .hero-content .title {
+      font-size: 400%;
+      font-family: Roboto, sans-serif;
+      margin: 5px; }
+    .hero .hero-content .subtitle {
+      margin: 5px;
+      font-size: 120%; }
+    .hero .hero-content .social-menu {
+      margin: 5px;
+      display: flex;
+      justify-content: space-between;
+      width: 150px; }
+      .hero .hero-content .social-menu i {
+        color: white; }
 
 .portfolio {
   display: flex;

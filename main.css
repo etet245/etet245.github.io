@@ -77,6 +77,9 @@ hr {
 
 .skills div {
   max-width: 400px; }
+  @media only screen and (min-width: 900px) {
+    .skills div {
+      width: 400px; } }
 .skills .icon-list {
   display: flex;
   justify-content: center;

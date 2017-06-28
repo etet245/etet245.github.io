@@ -25,7 +25,7 @@ html, body {
 
 body {
     background-color: #eee;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: Roboto, Arial, sans-serif;
 }
 
 .hero {
@@ -106,9 +106,18 @@ hr {
     
     div {
         width: 400px;
+    }
+    
+    .icon-list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
         
-        p {
-            font-size: 90%;
+        svg {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            color: gray;
         }
     }
 }
@@ -117,10 +126,10 @@ hr {
     @extend %body-section;
     
     div {
-        width: 400px;
+        max-width: 400px;
         
         p {
-            font-size: 90%;
+            font-size: 95%;
         }
     }
 }

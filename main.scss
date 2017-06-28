@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+%body-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin: auto;
+    padding: 20px 0;
+    width: 100%;
+    max-width: 900px;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -82,56 +93,68 @@ body {
 }
 
 .portfolio {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-    margin: auto;
-    padding: 20px 0;
-    width: 100%;
-    max-width: 900px;
+    @extend %body-section;
     
-    .column {
-        margin: 20px 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-        max-width: 100%;
-        
-        .col-title {
-            font-size: 150%;
-            font-family: Roboto, sans-serif;
-            text-align: center;
-        }
-        hr {
-            width: 100px;
-        }
-        a {
-            margin: 20px 0;
-            
-            img {
-                box-shadow: 0 0 3px #666;
-                width: 100%;
-                height: auto;
-            }
-        }
-    }
 }
 
 hr {
     width: 90%;
 }
 
-.footer {
+.skills {
+    @extend %body-section;
+    
+    div {
+        width: 400px;
+        
+        p {
+            font-size: 90%;
+        }
+    }
+}
+
+.about {
+    @extend %body-section;
+    
+    div {
+        width: 400px;
+        
+        p {
+            font-size: 90%;
+        }
+    }
+}
+
+
+.column {
+    margin: 20px 20px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-    margin: auto;
-    padding: 20px 0;
-    width: 100%;
-    max-width: 900px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 100%;
+    
+    .col-title {
+        font-size: 150%;
+        font-family: Roboto, sans-serif;
+        text-align: center;
+    }
+    hr {
+        width: 100px;
+    }
+    a {
+        margin: 20px 0;
+        
+        img {
+            box-shadow: 0 0 3px #666;
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.footer {
+    @extend %body-section;
 }
 
 @media only screen and (max-width: 800px) and (min-width: 601px) {
